@@ -1,0 +1,50 @@
+{
+  "name": "warlock-spell-jade",
+  "version": "1.0.0",
+  "description": "jade support for warlock",
+  "homepage": "https://github.com/tony-kerz/spell-jade",
+  "author": {
+    "name": "tony kerz",
+    "url": "http://github.com/tony-kerz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tony-kerz/spell-jade.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tony-kerz/spell-jade/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tony-kerz/spell-jade/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "peerDependencies": {
+    "warlock-spell-webapp": "~1.0.0"
+  },
+  "keywords": [
+    "warlockplugin",
+    "warlockspell"
+  ],
+  "warlock": {
+    "globs": {
+      "source": {
+        "jade": [
+          "<%= paths.source_app %>/**/*.jade.tpl"
+        ]
+      }
+    },
+    "tasks": {
+      "jade-compile": {
+        "sourceComments": "none"
+      }
+    }
+  },
+  "dependencies": {
+    "gulp-jade": "~0.7"
+  }
+}
