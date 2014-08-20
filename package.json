@@ -34,7 +34,7 @@
     "globs": {
       "source": {
         "jade": [
-          "<%= paths.source_app %>/**/*.jade.tpl"
+          "<%= paths.source_app %>/**/*.tpl.jade"
         ]
       }
     },

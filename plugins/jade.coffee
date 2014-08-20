@@ -1,4 +1,4 @@
-sass = require 'gulp-jade'
+jade = require 'gulp-jade'
 
 module.exports = ( warlock ) ->
   warlock.flow 'jade-to-build',
@@ -6,6 +6,6 @@ module.exports = ( warlock ) ->
     source_options:
       base: "<%= paths.source_app %>"
     tasks: [ 'webapp-build' ]
-    merge: 'flow::templates-to-build::50'
+    merge: 'flow::templates-to-build::90'
 
   .add( 50, 'jade-compile', jade )
